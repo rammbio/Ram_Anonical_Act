@@ -1,0 +1,526 @@
+/* GLOBAL STYLES */
+
+*, *::before, *::after {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+.clear {
+
+	clear: both;
+
+}
+
+.clearfix::after,
+.clearfix::before {
+
+	content: "";
+	display: block;
+	clear: both;
+
+}
+
+ul > li{
+	list-style: none;
+
+}
+
+/* Wrapper */
+
+#wrapper {
+
+	width: 1000px;
+	margin: 0 auto;
+
+}
+
+/* Header */
+
+#header-container {
+	background: #cfcfcf;
+	padding: 30px;
+
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+#header form input {
+
+	padding: 6px 35px 6px 6px;
+	background: white url('../img/magnifying-glass.png') no-repeat 94% 50%;
+	border: 0;
+
+}
+
+
+
+
+/* Navigation */
+
+#navigation {
+
+	margin: 20px 0 40px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	
+
+}
+
+.navigation-links {
+	display: flex;
+	gap: 30px;
+	
+}
+
+.navigation-links a {
+	color: black; 
+  }
+  
+
+
+.navigation-links > li {
+
+	padding: 5px 0 5px 0;
+	border-top: 2px solid transparent;
+
+}
+
+.navigation-links > li:hover {
+
+	
+	border-top: 2px solid black;
+
+}
+
+.navigation-links > li:hover a {
+
+	color: white;
+
+}
+
+.navigation-links > li > a:link {
+
+	text-decoration: none;
+	font-weight: 900;
+	counter-reset: black;
+	font-size: 22px;
+
+}
+
+/* Branding */
+
+#branding {
+
+	padding-top: 50px; 
+
+}
+
+#branding > img {
+
+	margin-bottom: 50px;
+
+}
+
+.notebooks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: -100px;
+
+}
+
+/* Sliders */
+
+#sliders {
+
+	margin-top: 100px;
+	margin-bottom: 60px;
+	font-size: 24px;
+
+}
+
+.sliders-links {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.sliders-links a:link, 
+.sliders-links a:visited {
+
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+
+}
+
+.sliders-links a:hover, 
+.sliders-links a:active {
+
+	color: grey;
+
+}
+
+.sliders-links > li {
+
+	position: relative;
+
+}
+
+.sliders-links > li::before {
+
+	
+
+}
+
+.sliders-links > li:hover::before {
+
+	content: "";
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: black;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+
+}
+
+
+/* Panel */
+
+#panel {
+
+	margin-top: 50px;
+
+}
+
+.panel-box {
+
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+
+}
+/* This is a common settings */
+
+#panel h2,
+#portfolio h2, 
+#recent-posts h2
+ {
+
+	position: relative;
+	margin-bottom: 30px;
+	font-size: 28px;
+	border-top: 1px solid black;
+	padding-top: 20px;
+	font-weight: normal;
+
+}
+
+#panel h2::before, 
+#portfolio h2::before,
+#recent-posts h2::before {
+
+	content: "";
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: grey;
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+
+}
+
+
+/* Portfolio */
+
+
+#portfolio {
+
+	margin-top: 80px;
+	margin-bottom: 30px;
+
+}
+
+.portfolio-images {
+
+	margin: 0;
+
+}
+
+.portfolio-thumbnails {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	
+
+}
+
+.portfolio-thumbnails img {
+
+	display: block;
+	
+	
+
+}
+
+.portfolio-thumbnails > li {
+
+	
+	position: relative;
+	overflow: hidden;
+
+}
+
+.portfolio-thumbnails > li:hover .overlay {
+
+	
+	top: 0;
+	
+}
+
+
+.overlay {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: -100%;
+	left: 0;
+
+
+}
+
+.overlay a:link, 
+.overlay a:visited { 
+
+	color: white;
+
+}
+
+.overlay a:hover, 
+.overlay a:active { 
+
+	color: white;
+
+}
+
+.overlay a {
+
+	margin-top: 20px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+.overlay a::before {
+
+	content: "";
+	display: block;
+	width: 25px;
+	height: 5px;
+	background: white;
+	position: absolute;
+	top: -6px;
+	left: 0;
+
+}
+
+.overlay a::after {
+
+	content: "";
+	display: block;
+	width: 25px;
+	height: 5px;
+	background: white;
+	position: relative;
+	top: 5px;
+	left: 0;
+
+}
+
+
+
+
+
+/* Recent Posts */
+
+#recent-posts {
+
+	margin-bottom: 60px;
+
+}
+
+#recent-posts h3 {
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	margin-top: 3opx;
+
+}
+
+#recent-posts a{
+
+	margin-top: 40px;
+	display: inline-block;
+
+}
+
+#recent-posts a:link,
+#recent-posts a:visited{
+
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+.recent-posts-panel {
+
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+
+}
+
+/* Footer */
+
+#footer {
+
+	margin-top: 80px;
+	border-top: 5px solid black;
+	position: relative;
+
+}
+
+.footer-panel {
+
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	padding-top: 40px;
+	
+}
+
+
+#footer::before {
+
+	content: "";
+	display: block;
+	width: 25px;
+	height: 5px;
+	background: gray;
+	position: absolute;
+	top: -5px;
+	left: 0;
+	
+}
+
+#footer::after {
+
+	content: "";
+	display: block;
+	width: 10px;
+	height: 5px;
+	background: white;
+	position: absolute;
+	top: -5px;
+	left: 20px;
+	
+}
+
+#footer h3 {
+
+	margin: 20px 0;
+
+}
+
+.footer-panel > li {
+
+	flex: 1;
+
+}
+
+.footer-panel-social {
+
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	margin-top: 20px;
+
+}
+
+
+
+.footer-copyright {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font: 12px;
+	margin: 30px 0;
+
+}
+
+.footer-copyright {
+
+	position: relative;
+	margin-bottom: 30px;
+
+	border-top: 1px solid black;
+	padding-top: 20px;
+	font-weight: normal;
+
+}
+
+.footer-panel-signup {
+
+	margin-top: 30px;
+
+}
+
+#footer form {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+
+}
+
+#footer form input[type='text']{
+
+	padding: 8px;
+	flex: 1.35;
+
+}
+
+#footer form input[type='button']{
+
+	padding: 8px;
+	flex: 1;
+	color: white;
+	background: grey;
+	border: 1px solid grey;
+
+}

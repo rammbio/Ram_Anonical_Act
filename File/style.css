@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex; /* Apply flexbox to the container */
+    justify-content: space-around; /* Optional: Adjust spacing between folders */
+    flex-wrap: wrap; /* Allow wrapping of items to a new line */
+}
+
+.folder {
+    flex: 1; /* Distribute available space evenly among folders */
+    max-width: 300px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Center the content within each folder */
+}
+
+.folder h2 {
+    margin-top: 0;
+}
+.folder a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.folder a:hover {
+    background-color: #ccc;
+}
+
